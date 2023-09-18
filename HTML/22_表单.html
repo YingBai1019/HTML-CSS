@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 用表单的话要加/s -->
+    <form action="https://www.baidu.com/s">
+        <input type="text" name="wd">
+        <!-- 如果用百度的话，name后面一定要写wd,这个是百度的后端工程师规定的 -->
+        <button>搜索</button>
+    </form>
+    <hr>
+    <form action="https://search.jd.com/search" target="_self" method="">
+        <!-- method是请求方式 -->
+        <input type="text" name="keyword" >
+        <button>搜索</button>
+    </form>
+    <a href="https://search.jd.com/search?keyword=手机">搜索手机</a>
+</body>
+</html>

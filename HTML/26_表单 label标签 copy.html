@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="???" target="_self">
+        <label for="zhanghu">账户:</label>
+        <input id="zhanghu" type="text" name="account" maxlength="10"><br>
+        <label >密码:
+            <input id="mima" type="password" name="password" maxlength="15">
+        </label><br>
+        性别：
+        <input type="radio" name="gender" value="male" id="nan">
+        <label for="nan">男</label>
+        <input type="radio" name="gender" value="female" id="nv">
+        <label for="nv">女</label><br>
+        爱好:
+        <input type="checkbox" name="hobby" value="dance">跳舞
+        <input type="checkbox" name="hobby" value="Study">学习
+        <input type="checkbox" name="hobby" value="piano">弹琴<br>
+        其他:
+        <textarea name="other" cols="20" rows="3"></textarea><br>
+        籍贯:
+        <select name="hometown">
+            <option value="晋" selected>山西</option>
+            <option value="鲁">山东</option>
+            <option value="陕">陕西</option><br>
+        </select><br>
+        <input type="hidden" name="abc" value="123">
+        <button>确认</button>
+        <!-- <input type="submit" value="确认"> -->
+        <button type="reset">重置</button>
+        <!-- <input type="reset" value="重置"> -->
+        <button type="button">检测账户是否被注册</button>
+    </form>
+</body>
+
+</html>

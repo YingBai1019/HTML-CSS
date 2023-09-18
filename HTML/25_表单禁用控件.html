@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="???" target="_self">
+        <!-- 文本输入框 -->
+        账户：<input disabled type="text" name="account" value="xuexi" maxlength="10"><br>
+        <!-- 密码输入框 -->
+        密码：<input type="password" name="password" value="goodstudy" maxlength="15"><br>
+        <!-- 单选框 -->
+        性别：
+        <input type="radio" name="gender" value="male">男
+        <input type="radio" name="gender" value="female" checked>女<br>
+        <!-- 多选框 -->
+        爱好:
+        <!-- checked代表默认选择 -->
+        <input type="checkbox" name="hobby" value="dance" checked>跳舞
+        <input type="checkbox" name="hobby" value="Study">学习
+        <input type="checkbox" name="hobby" value="piano">弹琴<br>
+        其他:
+        <textarea name="other" cols="20" rows="3"></textarea><br>
+        籍贯:
+        <select name="hometown" >
+            <option value="晋" selected>山西</option>
+            <option value="鲁">山东</option>
+            <option value="陕">陕西</option><br>
+            <!-- 有value值的时候，提交带的是value的值 selected默认值-->
+        </select>
+        <!-- 隐藏域-->
+        <input type="hidden" name="abc" value="123">
+        <!-- 确认按钮的第一种写法 -->
+        <button>确认</button>
+        <!-- 第二种写法，不可以写name-->
+        <input type="submit" value="确认">
+        <!-- 重置按钮 -->
+        <button type="reset">重置</button>
+        <!-- 第二种写法，不可以写name-- -->
+        <input type="reset" value="重置">
+        <!-- 确认和重置按钮都不是普通按钮，确认按钮可以引起表单的提交，重置是重置信息 -->
+        <!-- 普通按钮 -->
+        <button type="button">检测账户是否被注册</button>
+
+    </form>
+</body>
+</html>

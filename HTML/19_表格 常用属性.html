@@ -8,14 +8,17 @@
 </head>
 
 <body>
-    <table border="1" >
+    <!-- 单元格的边框需要通过css进行调整，当数值大于1的时候，只能调整最外层的边框 -->
+    <table border="1" width="500" height="500" cellspacing="0">
         <!-- 表格标题 -->
         <caption>学生信息</caption>
         <!-- 表格头部 -->
-        <thead>
+        <thead  height="500" align="center" valign="middle"> 
+            <!-- align是控制水平对其的方式 left,center,right
+            valign是垂直对齐的方式， top,middle, bottom-->
             <!-- 行用tr代表，单元格用th代表 -->
             <tr>
-                <th>姓名</th>
+                <th width="50" height="50" align="right" valign="bottom">姓名</th>
                 <th>性别</th>
                 <th>年龄</th>
                 <th>民族</th>
@@ -23,9 +26,9 @@
             </tr>
         </thead>
         <!-- 表格主体 -->
-        <tbody>
+        <tbody height="500" align="center" valign="middle">
             <!-- tr代表行，td代表主体里面的单元格 -->
-            <tr>
+            <tr height="50" align="center" valign="middle">
                 <td>张三</td>
                 <td>m</td>
                 <td>20</td>
@@ -55,7 +58,7 @@
             </tr>
         </tbody>
         <!-- 表格脚注 -->
-        <tfoot>
+        <tfoot height="60">
             <tr>
                 <td></td>
                 <td></td>
@@ -64,6 +67,7 @@
                 <td>共计：4</td>
             </tr>
         </tfoot>
+    </table>
     </table>
 </body>
 
