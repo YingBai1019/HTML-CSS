@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pro {
+            color: brown;
+    
+        }
+
+        .beauty {
+            color: purple;
+
+        }
+
+        .dog {
+            color: blue;
+        }
+
+        .pig {
+            color: pink;
+        }
+        /* 并集选择器使用,进行分隔 
+        id选择器在并集选择器中的顺序比较随意*/
+        #computer,
+        .beauty,
+        .dog,
+        .pig,
+        .pro{
+            font-size: 40px;
+            background-color: grey;
+            width: 160px;
+        }
+        /* .good{
+            font-size: 40px;
+            background-color: grey;
+            width: 160px;
+        } */
+    </style>
+</head>
+
+<body>
+    <p class="dog good">小狗旺财</p>
+    <p class="pig good">小猪佩奇</p>
+
+    <hr>
+    <h2 class="beauty good">明星beauty</h2>
+    <h2 class="pro good">经纪人专业</h2>
+    <h2 id="computer">计算机</h2>
+</body>
+
+</html>
