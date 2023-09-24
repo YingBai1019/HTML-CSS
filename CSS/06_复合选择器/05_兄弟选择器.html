@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 相邻兄弟选择器+号代表的是紧紧相邻，而且只往下一行找 */
+        /* div+p{
+            color: brown;
+        } */
+        /* 通用兄弟选择器：
+        div后所有兄弟元素(在这个程序中是p元素) 只往下看不往上看*/
+        div~p{
+            color: aqua;
+        }
+        li+li{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div>编程程序</div>
+    <p>java</p>
+    <p>python</p>
+    <p>c </p>
+    <p>c+ </p>
+    <ul>
+        <li>主页</li>
+        <li>菜单</li>
+        <li>导航  </li>
+        <li>通用</li>
+    </ul>
+</body>
+</html>

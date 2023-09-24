@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 第一种写法：选中具有title属性的元素，和具体的值无关 */
+        /* [title]{
+            color: blueviolet;
+        } */
+        /* 第二种写法：选中具有title属性的元素且属性值为english */
+        /* [title ="english"]{
+            color: blueviolet;
+        } */
+        /* 第三种写法：选中具有title属性的元素并且属性值要以a开头 */
+        /* [title^="e"]{
+            color: blueviolet;
+        } */
+        /* 第四种写法：选中具有title属性的元素并且属性值要以h结尾 */
+          [title$="h"]{
+            color: blueviolet;
+        }
+        /* 第四种写法：选中具有title属性的元素并且属性值要以h结尾 */
+         [title*="h"]{
+            color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <div title="english">communication</div>
+    <div title="e-skill">skills</div>
+    <div title="oral-h">spoken</div>
+</body>
+</html>
