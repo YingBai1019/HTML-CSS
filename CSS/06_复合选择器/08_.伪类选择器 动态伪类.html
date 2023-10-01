@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: brown;
+        }
+
+        a:visited {
+            color: gray;
+        }
+
+        /* 选中的是鼠标悬浮状态下的a元素 */
+        a:hover {
+            color: red;
+        }
+
+        /* 选中的是鼠标激活的状态下的a元素 */
+        a:active {
+            color: skyblue;
+        }
+
+        /*顺序很重要，如果先写hover，再也不会出现 */
+        /* 选中的是鼠标悬浮状态下的span元素 */
+        span:hover {
+            color: green;
+        }
+
+        /* 选中的是鼠标激活的状态下的span元素 */
+        span:hover {
+            color: aquamarine;
+        }
+
+        /* 焦点输入，只有输入性(表单类)的元素才可以用 */
+        /* input:focus {
+            color: orange;
+            background: green;
+        }
+        select:focus{
+            color: orange;
+            background: green;
+        } */
+        input:focus, select:focus {
+            color: orange;
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.google.co.uk">去谷歌</a>
+    <a href="https://www.bilibili.com/">去B站</a>
+    <span>哔哩哔哩</span>
+    <br>
+    <input type="text">
+    <br>
+    <input type="text">
+    <br>
+    <input type="text">
+</body>
+
+</html>

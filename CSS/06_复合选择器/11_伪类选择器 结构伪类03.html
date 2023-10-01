@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div>p:nth-child(6){
+            color: brown;
+        }
+        div>p:nth-of-type(6){
+            color: blue;
+        } */
+        /* 选中div中倒数第n个儿子p元素(按照所有的兄弟计算) --结构一 */
+        /* div>p:nth-last-child(3) {
+            color: aqua;
+        } */
+
+        /* 选中div中倒数第n个儿子p元素(按照所有同类型兄弟计算) --结构一 */
+        /* div>p:nth-last-of-type(3) {
+            color: blueviolet;
+        } */
+        /* 选中的是没有兄弟的span --结构二 */
+        /* span:only-child {
+            color: red;
+        } */
+        /* 选中的是没有同类型兄弟的span--结构二 */
+        /* span:only-of-type {
+            color: blue;
+        } */
+        /* 选中的是根元素 */
+        /* :root {
+            background-color: gray;
+        } */
+
+        div:empty {
+            width: 30px;
+            height: 30px;
+            background-color:blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 结构一 -->
+    <!-- <div>
+        <span>测试一</span>
+        <p>张三：98</p>
+        <p>赵四：90</p>
+        <p>王五：88</p>
+        <p>赵六：80</p>
+        <p>孙七：78</p>
+        <p>老八：68</p>
+        <span>测试二</span>
+    </div>
+     -->
+   
+     <!-- 结构二 -->
+    <!-- <div><span>测试一</span></div>
+    <div>
+        <span>测试2</span>
+        <p>张三：98</p>
+        <p>赵四：90</p>
+        <p>王五：88</p>
+        <p>赵六：80</p>
+        <p>孙七：78</p>
+        <p>老八：68</p>
+        <span>测试2</span>
+    </div> -->
+    
+    <!-- 结构三 -->
+
+    <div></div>
+</body>
+
+</html>
